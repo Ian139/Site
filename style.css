@@ -5,22 +5,6 @@
 	box-sizing: border-box;
 }
 
-:root {
-	--primary-color: #302ae6;
-	--secondary-color: #536390;
-	--font-color: #424242;
-	--bg-color: #fff;
-	--heading-color: #292922;
-}
-
-[data-theme="dark"] {
-	--primary-color: #9a97f3;
-	--secondary-color: #818cab;
-	--font-color: #ffffff;
-	--bg-color: #161625;
-	--heading-color: #ffffff;
-}
-
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, sans-serif;
@@ -28,8 +12,8 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 2rem;
-	background-color: var(--bg-color);
-	color: var(--font-color);
+	background-color: #fff;
+	color: #424242;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -49,18 +33,18 @@ body {
 	border: none;
 	padding: 0.5rem 0;
 	font-size: 1.1rem;
-	color: var(--font-color);
+	color: #424242;
 	cursor: pointer;
 	position: relative;
 	font-family: inherit;
 }
 
 .tab-btn:hover {
-	color: var(--heading-color);
+	color: #292922;
 }
 
 .tab-btn.active {
-	color: var(--heading-color);
+	color: #292922;
 }
 
 .tab-btn.active::after {
@@ -70,7 +54,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 2px;
-	background-color: var(--heading-color);
+	background-color: #292922;
 }
 
 /* Tab Content */
@@ -99,18 +83,18 @@ body {
 .credentials h1 {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
-	color: var(--heading-color);
+	color: #292922;
 }
 
 .title {
 	font-size: 1.25rem;
-	color: var(--font-color);
+	color: #424242;
 	margin-bottom: 0.75rem;
 }
 
 .contact {
 	font-size: 1.1rem;
-	color: var(--font-color);
+	color: #424242;
 	margin-bottom: 1.5rem;
 }
 
@@ -121,7 +105,7 @@ body {
 }
 
 .social-links a {
-	color: var(--font-color);
+	color: #424242;
 	text-decoration: none;
 }
 
@@ -131,7 +115,7 @@ body {
 }
 
 .social-links a:hover {
-	color: var(--secondary-color);
+	color: #536390;
 }
 
 /* Education Section */
@@ -143,7 +127,7 @@ body {
 .skills h2 {
 	font-size: 1.25rem;
 	margin-bottom: 1.5rem;
-	color: var(--heading-color);
+	color: #292922;
 }
 
 .education-item h3 {
@@ -203,20 +187,20 @@ body {
 .experience-info h3 {
 	font-size: 1rem;
 	font-weight: 600;
-	color: var(--heading-color);
+	color: #292922;
 	margin-bottom: 0.25rem;
 }
 
 .project-info p,
 .experience-info p {
 	font-size: 0.9rem;
-	color: #4a4a4a;
+	color: #424242;
 	margin-bottom: 0.25rem;
 }
 
 .tech {
 	font-size: 0.8rem;
-	color: #666;
+	color: #536390;
 }
 
 .company {
@@ -244,7 +228,7 @@ body {
 
 /* Links */
 a {
-	color: var(--heading-color);
+	color: #292922;
 	text-decoration: none;
 }
 
@@ -288,63 +272,4 @@ a:hover {
 	.skills-group {
 		margin-bottom: 1.5rem;
 	}
-}
-
-/* Dark mode toggle styles */
-.theme-switch-wrapper {
-	position: fixed;
-	top: 20px;
-	right: 20px;
-	display: flex;
-	align-items: center;
-	z-index: 100;
-}
-
-.theme-switch {
-	display: inline-block;
-	height: 34px;
-	position: relative;
-	width: 60px;
-}
-
-.theme-switch input {
-	display: none;
-}
-
-.slider {
-	background-color: #ccc;
-	bottom: 0;
-	cursor: pointer;
-	left: 0;
-	position: absolute;
-	right: 0;
-	top: 0;
-	transition: 0.4s;
-}
-
-.slider:before {
-	background-color: #fff;
-	bottom: 4px;
-	content: "";
-	height: 26px;
-	left: 4px;
-	position: absolute;
-	transition: 0.4s;
-	width: 26px;
-}
-
-input:checked + .slider {
-	background-color: var(--primary-color);
-}
-
-input:checked + .slider:before {
-	transform: translateX(26px);
-}
-
-.slider.round {
-	border-radius: 34px;
-}
-
-.slider.round:before {
-	border-radius: 50%;
 }
