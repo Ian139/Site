@@ -232,8 +232,15 @@ a {
 	text-decoration: none;
 }
 
+
 a:hover {
 	text-decoration: underline;
+}
+
+/* Tabs */
+
+.tab-btn a:hover{
+	text-decoration: none;
 }
 
 /* Responsive design */
