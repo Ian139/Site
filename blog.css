@@ -22,7 +22,7 @@ body {
 
 /* Header */
 header {
-	text-align: center;
+	text-align: left;
 	margin-bottom: 10px;
 }
 
@@ -151,7 +151,7 @@ a:hover {
 .blog-item {
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: left;
 	margin-bottom: 1rem;
 	padding: 1rem 0;
 }
