@@ -6,7 +6,7 @@
 
 ## The Problem: Prompts Are the New Programming Language— But Most People Suck at It
 
-With the recent rise of Gemini, ChatGPT, and other Generative AI solutions, we have begun the era of maximal laziness. Why not do even less? Instead of taking courses and spending hours learning difficult prompt engineering techniques to tailor to all species of models, why not let the models do some more heavy lifting!
+With the recent rise of Gemini, ChatGPT, and other Generative AI solutions, we have begun the era of maximal efficient. Why not do even less? Instead of taking courses and spending hours learning difficult prompt engineering techniques to tailor to all species of models, why not let the models do some more heavy lifting!
 
 ---
 
