@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="blog.css" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<title>
+			OnePrompted: Can AI Learn to Improve Your Prompts? We Built a Model to
+			Try.
+		</title>
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<button class="tab-btn home-btn"><a href="index.html">Home</a></button>
+		</header>
+		<div id="post-content"></div>
+
+		<script>
+			fetch("blog2.md")
+				.then((response) => {
+					if (!response.ok) {
+						throw new Error(`HTTP error! status: ${response.status}`);
+					}
+					return response.text();
+				})
+				.then((text) => {
+					console.log(
+						"Markdown content loaded:",
+						text.substring(0, 100) + "..."
+					);
+					document.getElementById("post-content").innerHTML =
+						marked.parse(text);
+				})
+				.catch((error) => {
+					console.error("Error loading markdown:", error);
+					document.getElementById("post-content").innerHTML =
+						"Error loading content: " + error.message;
+				});
+		</script>
+	</body>
+</html>
