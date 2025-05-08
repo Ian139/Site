@@ -345,12 +345,8 @@ a:hover {
 /* Container */
 .container {
 	max-width: 800px;
-	height: 100vh;
 	margin: 0 auto;
 	padding: 2rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 }
 
 /* Blog Section */
