@@ -1,108 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Ian Rapko - My Work</title>
-		<link rel="stylesheet" href="main.css" />
-		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
-	</head>
-	<body>
-		<header>
-				<a href="/" class="back-link">← Back to Home</a>
-			</header>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ian Rapko - Projects</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body class="work-page">
+	<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+		<svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+			<circle cx="12" cy="12" r="5"/>
+			<line x1="12" y1="1" x2="12" y2="3"/>
+			<line x1="12" y1="21" x2="12" y2="23"/>
+			<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+			<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+			<line x1="1" y1="12" x2="3" y2="12"/>
+			<line x1="21" y1="12" x2="23" y2="12"/>
+			<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+			<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+		</svg>
+		<svg class="moon-icon" viewBox="0 0 24 24" fill="currentColor">
+			<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+		</svg>
+	</button>
 
-			<div class="work-items">
-				<div class="work-item">
-					<div class="work-info">
-						<h3>
-							<a href="https://securedao.gitbook.io/securedao-docs"
-								>SecureDAO</a
-							>
-						</h3>
-						<ul>
-							<li>
-								Founded and led the development of a DeFi platform on Fantom,
-								holding over $300,000 in assets
-							</li>
-							<li>Peak of 2500+ active users and valuation of $3 million</li>
-							<li>React, Solidity, AWS, Git</li>
-						</ul>
-					</div>
-					<span class="date">September 2021 – February 2023</span>
-				</div>
+	<div class="work-page-header">
+		<a href="/" class="back-arrow">←</a>
+	</div>
 
-				<div class="work-item">
-					<div class="work-info">
-						<h3><a href="http://silentbball.com/">SilentBball</a></h3>
-						<ul>
-							<li>Over 5 Million Impressions on social media</li>
-							<li>First page ranking on Google, SEO</li>
-						</ul>
-					</div>
-					<span class="date">July 2023 – Present</span>
-				</div>
+	<div class="work-items">
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="https://securedao.gitbook.io/securedao-docs">SecureDAO</a></h3>
+				<ul>
+					<li>Founded and led the development of a DeFi platform on Fantom, holding over $300,000 in assets</li>
+					<li>Peak of 2500+ active users and valuation of $3 million</li>
+					<li>React, Solidity, AWS, Git</li>
+				</ul>
+			</div>
+			<span class="date">September 2021 – February 2023</span>
+		</div>
 
-				<div class="work-item">
-					<div class="work-info">
-						<h3><a href="https://x.com/UmassBlockchain">Blockchain Club</a></h3>
-						<ul>
-							<li>Revived the Blockchain Club at UMass</li>
-							<li>Dev-oriented club, building smart contracts and DeFi apps</li>
-						</ul>
-					</div>
-					<span class="date">2025 – Present</span>
-				</div>
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="http://silentbball.com/">SilentBball</a></h3>
+				<ul>
+					<li>Over 5 Million Impressions on social media</li>
+					<li>First page ranking on Google, SEO</li>
+				</ul>
+			</div>
+			<span class="date">July 2023 – Present</span>
+		</div>
 
-				<div class="work-item">
-					<div class="work-info">
-						<h3>
-							<a href="https://github.com/megemann/oneprompted">OnePrompted</a>
-						</h3>
-						<ul>
-							<li>
-								AI system that enhances your prompts before sending them to
-								largelanguage models
-							</li>
-							<li>
-								Fine-tuned model that takes vague, simple prompts and transforms
-								them into highly effective ones using advanced prompt
-								engineering techniques
-							</li>
-						</ul>
-						<p class="tech">Python, VertexAI, Google AI Studio</p>
-					</div>
-					<span class="date">April 2025 – May 2025</span>
-				</div>
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="https://x.com/UmassBlockchain">Blockchain Club</a></h3>
+				<ul>
+					<li>Revived the Blockchain Club at UMass</li>
+					<li>Dev-oriented club, building smart contracts and DeFi apps</li>
+				</ul>
+			</div>
+			<span class="date">September 2024 – Present</span>
+		</div>
 
-				<div class="work-item">
-					<div class="work-info">
-						<h3><a href="#">WhereIBeen</a></h3>
-						<p>
-							A social travel exploration app that gamifies world adventures by
-							revealing the map as you explore, connecting travelers and their
-							journeys
-						</p>
-						<p class="tech">
-							SwiftUI, MapKit, CloudKit, Core Location, Core Data
-						</p>
-					</div>
-					<span class="date">March 2025 – Present</span>
-				</div>
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="https://github.com/megemann/oneprompted">OnePrompted</a></h3>
+				<ul>
+					<li>AI system that enhances your prompts before sending them to large language models</li>
+					<li>Fine-tuned model that takes vague, simple prompts and transforms them into highly effective ones using advanced prompt engineering techniques</li>
+				</ul>
+				<p class="tech">Python, VertexAI, Google AI Studio</p>
+			</div>
+			<span class="date">April 2025 – May 2025</span>
+		</div>
 
-				<div class="work-item">
-					<div class="work-info">
-						<h3>
-							<a href="#"><s>MinuteMunch</s></a>
-							<span class="status">(in progress)</span>
-						</h3>
-						<p>
-							A full-stack web3 prediction market using React.js and Solidity
-						</p>
-						<p class="tech">Javascript, Java, React, MongoDB, Git</p>
-					</div>
-					<span class="date">November 2023 – May 2024</span>
-				</div>
-	</body>
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="#">Scenic Route Optimizer</a></h3>
+				<ul>
+					<li>Designed ML pipeline to rank road segments by scenic quality using satellite and elevation data</li>
+					<li>Implemented CNN-based model to infer scenic appeal from fused terrain and satellite inputs</li>
+				</ul>
+				<p class="tech">Python, PyTorch, Mapbox, OSMnx, Hugging Face</p>
+			</div>
+			<span class="date">May 2025 – Present</span>
+		</div>
+
+		<div class="work-item">
+			<div class="work-info">
+				<h3><a href="#">Medical Billing Agent</a></h3>
+				<ul>
+					<li>Built AI agent using MedGemma-27B to automate insurance claim analysis and policy parsing</li>
+					<li>Integrated with clearinghouse services to automate denial workflow processing and appeals documentation</li>
+				</ul>
+				<p class="tech">Python, Docker, Qdrant, Firecrawl, vLLM</p>
+			</div>
+			<span class="date">June 2025 – September 2025</span>
+		</div>
+	</div>
+
+	<script src="theme.js"></script>
+</body>
 </html>
