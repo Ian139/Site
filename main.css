@@ -23,6 +23,10 @@ body {
 	padding: 5rem 1.4rem 4rem;
 }
 
+body.blog-page {
+	max-width: 38rem;
+}
+
 body.dark-mode {
 	--bg: #111;
 	--text: #eaeaea;
@@ -127,6 +131,10 @@ body.dark-mode .theme-toggle .moon-icon {
 	text-decoration: none;
 }
 
+.blog-item a {
+	display: inline-block;
+}
+
 .blog-item a:hover,
 .work-link:hover,
 .work-info h3 a:hover,
@@ -140,6 +148,10 @@ body.dark-mode .theme-toggle .moon-icon {
 .work-info .tech {
 	color: var(--muted);
 	font-size: 0.95rem;
+}
+
+.blog-item .date {
+	display: block;
 }
 
 .work-page-header {
