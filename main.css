@@ -202,6 +202,7 @@ body.dark-mode .theme-toggle .moon-icon {
 #post-content p,
 #post-content li {
 	font-size: 1.02rem;
+	line-height: 1.75;
 }
 
 #post-content ul,
