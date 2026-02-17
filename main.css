@@ -193,6 +193,12 @@ body.dark-mode .theme-toggle .moon-icon {
 	margin-bottom: 1.1rem;
 }
 
+#post-content hr {
+	border: 0;
+	border-top: 1px solid var(--line);
+	margin: 1.6rem 0;
+}
+
 #post-content p,
 #post-content li {
 	font-size: 1.02rem;
