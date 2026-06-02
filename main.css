@@ -75,7 +75,7 @@ body.dark-mode .theme-toggle .moon-icon {
 }
 
 .profile {
-	margin-bottom: 2.25rem;
+	margin-bottom: 1.5rem;
 }
 
 .profile h1 {
@@ -117,11 +117,14 @@ body.dark-mode .theme-toggle .moon-icon {
 	height: 18px;
 }
 
-.blog-section,
 .work-section,
 .work-items {
 	border-top: 1px solid var(--line);
 	padding-top: 1rem;
+}
+
+.blog-section {
+	padding-top: 0;
 }
 
 .blog-item,
