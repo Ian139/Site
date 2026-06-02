@@ -91,6 +91,13 @@ body.dark-mode .theme-toggle .moon-icon {
 	font-size: 1rem;
 }
 
+.profile .summary {
+	color: var(--text);
+	font-size: 1rem;
+	margin-top: 0.85rem;
+	max-width: 40rem;
+}
+
 .social-links {
 	display: flex;
 	gap: 0.75rem;
