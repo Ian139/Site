@@ -1,4 +1,4 @@
-﻿# OnePrompted: Can AI Learn to Improve Your Prompts? We Built a Model to Try.
+# OnePrompted: Can AI Learn to Improve Your Prompts? We Built a Model to Try.
 
 > We trained a custom Gen AI model to take vague, lazy prompts and turn them into highly effective ones using prompt engineering techniques. Here's how we did it using Vertex AI, Gemini, and a sprinkle of Gen AI magic. Code included. Lessons learned. Future unlocked.
 
@@ -30,7 +30,7 @@ After scouring the internet for hours and hours, going from dataset to dataset, 
 
 After importing from the website, we were given data that looked like this:
 
-```json
+```text
 {
     "id": "2wtLdZm", # Conversation id
     "conversations": [ #list of prompts and responses, each assigned a role to distinguish them
@@ -53,8 +53,6 @@ After importing from the website, we were given data that looked like this:
 ```
 
 I won't bore you with the specifics, but this data was far from clean. Here are some general transformations we did to try and make 52,000 random conversations into something usable.
-
-**Graph Image Here**
 
 Once we were left with our small subsets of human prompts, we could get into the knitty gritty and focus on ensuring each prompt was high quality and train ready.
 
@@ -107,13 +105,7 @@ The 'cherry on top' of our data is our high label quality, due to our final tech
 
 ---
 
-## Show Me the Glow-Up: Before vs After Ians eval
-
-| Bad Prompt                | Improved Prompt                                                                 | Final Model Output |
-| ------------------------- | ------------------------------------------------------------------------------- | ------------------ |
-| "Tell me about marketing" | "Act like a marketing expert. Break down key components of a digital strategy." | (LLM output here)  |
-
-- More side-by-side transformations
+## Show Me the Glow-Up: Before vs. After Ian's Evaluation
 
 While we created what we assumed to be improved fine-tuned models, we really didn't have any way to prove that these new prompts truly gave us better outputs. Even with seeing improvements anecdotally, there was a need to quantify the models performance and give results on the new prompts, and the responses that were generated from them. The following methods were used as ways to give us insight on the quality of our models, and the improvements between V1 and V2, if there were any at all.
 
@@ -139,12 +131,12 @@ I had prompted gemini with guidelines to create a JSON formatted response gradin
 ```
 
 Where each category would be placed at a scale between 1-5, and a weighted score is a cumulation of the above. I was hoping to see some signs of clear improvement with this method of analysis, but got nothing of value once again.
-![Image of chart](https://i.postimg.cc/tCHT7mzH/output.png)
+![Rubric score chart for prompt evaluation](https://i.postimg.cc/tCHT7mzH/output.png)
 
 After these results, I had to once look back at the results and decide where my bottleneck was, and why my results continued to produce not only unconvincing information, but information that didn't even make sense with how we expected the rubric's results to look.
 
 I had believed to find that the issue lied with what I was grading, rather than the method I used to grade the results. With that I took right back at the rubric grader, and attempted a similar method to grade the responses, this time without any classification as I had believed that these categories had less relevance in the responses, which is something I would go back to change, as more specific data visualizations would be much easier to work though with these categories, but it's an easy fix that we can go back on and run again. The following chart is what the results of what the responses for each prompt model was graded as:
-![Image of chart](https://i.postimg.cc/zX0r5dt7/output.pnghttps://i.postimg.cc/zX0r5dt7/output.png)
+![Response evaluation chart comparing prompt models](https://i.postimg.cc/zX0r5dt7/output.png)
 
 Ok, this time we actually see some improvements between the V1 model and V2 model, something we can be happy about. Not only that, but our attempted improved V2 model is holding up with the base prompts, meaning that we can say we are _at least_ as good as a normal person's prompts when it comes to what they get back. The reason that I am not super satisfied with the results here is because of the lack of information we got with the way I had conducted the prompts, not giving any categorical analysis puts us in a spot where we can't further analyze what regions aren't being answered well, and we can't determine if there are any biases, or strange patterns forming that could otherwise be easily pointed out to help get true grades.
 
